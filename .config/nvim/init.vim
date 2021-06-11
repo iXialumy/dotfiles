@@ -45,8 +45,6 @@ EOF
 " Which key
 lua << EOF
   require("which-key").setup{}
-  local wk = require("which-key")
-  wk.register(mappings, opts)
 EOF
 
 " GUI Settings
