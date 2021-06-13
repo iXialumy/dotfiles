@@ -1,4 +1,5 @@
 let mapleader = "\<Space>"
+syntax on
 
 " Plugins
 
@@ -29,7 +30,10 @@ Plug 'nvim-telescope/telescope.nvim'
 Plug 'folke/which-key.nvim'
 
 " GUI
- Plug 'itchyny/lightline.vim'
+Plug 'itchyny/lightline.vim'
+
+Plug 'kyazdani42/nvim-web-devicons'
+Plug 'romgrk/barbar.nvim'
 
 " Initialize plugin system
 call plug#end()
@@ -49,5 +53,14 @@ EOF
 
 " GUI Settings
 set mouse=a " Enable mouse usage for all modes
+
+" Key Bindings
+" ------------
+
+" Find files using Telescope
+nnoremap <leader>ff <cmd>Telescope find_files<cr>
+nnoremap <leader>fg <cmd>Telescope live_grep<cr>
+nnoremap <leader>fb <cmd>Telescope buffers<cr>
+nnoremap <leader>fh <cmd>Telescope help_tags<cr>
 
 
