@@ -43,7 +43,7 @@ set completeopt=menuone,noselect
 
 " Add language servers
 lua << EOF
-require'lspconfig'.rls.setup{}
+require'lspconfig'.rust_analyzer.setup{}
 EOF
 
 " Which key
